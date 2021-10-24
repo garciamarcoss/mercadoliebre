@@ -13,22 +13,68 @@
 </head>
 
 <body>
-    <main>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre"></a>
+            </div>
+            <div class="container-buscar">
+                    <input type="search" id="search" placeholder="Buscar productos, marcas y más..."/>
+                    <i class="fas fa-search"></i>
+            </div>
+            
+            <h2 class="texto">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+        <a class="hamburguer-buttom" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="bottom">
+            <ul class="left">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="register">
+                        Creá tu cuenta
+                        <i class="far fa-address-card"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="login">
+                        Ingresá
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Mis compras
+                        <i class="fas fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="login">
         <div class="container-form">
-            <form class="form-area" action="/" method="#">
-                <label for="usuario">
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
-                </label><br>
-                <label for="password">
-                    <input type="password" name="password" id="pass" placeholder="Ingresa tu contraseña">
-                </label><br>
-                <label for="ingresar">
-                    <a Href="home.html" class="links-pointer-color">
-                        <button type="submit" id="login">
-                            <div id="textologin">Enviar</div>
-                        </button>
-                </label></a>
-            </form>
+            <label for="usuario"></label>
+            <input class="block" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+            
+            <label for="password"></label>
+            <input class="block" type="password" name="password" id="pass" placeholder="Ingresa tu contraseña">
+            
+            <label for="ingresar">
+                <a Href="home.html" class="links-pointer-color">
+                    <button class="block buttom-send" type="submit" id="login">
+                        <div id="textologin">Enviar</div>
+                    </button>
+                </a>    
+            </label>
         </div>
     </main>
 </body>
