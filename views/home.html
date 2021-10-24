@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Mercado Liebre</title>
+    <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,34 +13,32 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-header_top">
-            <div class="logo-and-form">
-                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre">
-                <div>
-                    <form class="form" action="/search" method="get">
-                        <input type="search" name="search" placeholder="Buscar productos, marcas">
-                        <i class="fas fa-search"></i>
-                    </form>
-                </div>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre"></a>
             </div>
-            <h2 class="header-texto">
+            <div class="container-buscar">
+                    <input type="search" id="search" placeholder="Buscar productos, marcas y más..."/>
+                    <i class="fas fa-search"></i>
+            </div>
+            
+            <h2 class="texto">
                 <i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjeta de crédito
             </h2>
         </div>
-
         <a class="hamburguer-buttom" href="#">
             <i class="fas fa-bars"></i>
         </a>
-        <nav class="main-navbar">
-            <ul class="navbar-left">
+        <div class="bottom">
+            <ul class="left">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <ul class="navbar-rigth">
+            <ul class="right">
                 <li>
                     <a href="register">
                         Creá tu cuenta
@@ -60,10 +58,10 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <main >
+    <main>
         <img src="/images/img-home-banner.jpg" alt="Banner Meli">
         <div class="container">
             <h2 class="tittle">Basado en tu última visita</h2>
@@ -135,7 +133,7 @@
                             <p class="product_discount">20% off</p>
                         </div>
                         <h4 class="product_description">MacBook Pro 2019</h4>
-                        </div>
+                    </div>
                 </article>
                 <article>
                     <img class="product_img" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
@@ -167,17 +165,20 @@
             <div class="footer-section">
                 <i class="fas fa-credit-card"></i>
                 <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es seguro!</p>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es
+                    seguro!</p>
             </div>
             <div class="footer-section">
                 <i class="fas fa-gift"></i>
                 <h4>Envío gratis desde $2500</h4>
-                <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de Mercado Puntos.</p>
             </div>
             <div class="footer-section">
                 <i class="fas fa-user-shield"></i>
                 <h4>Seguridad, de principio a fin</h4>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.</p>
             </div>
         </section>
         <div>
