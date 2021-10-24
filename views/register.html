@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,43 +11,126 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6909961604.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <main>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre"></a>
+            </div>
+            <div class="container-buscar">
+                    <input type="search" id="search" placeholder="Buscar productos, marcas y más..."/>
+                    <i class="fas fa-search"></i>
+            </div>
+            
+            <h2 class="texto">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+        <a class="hamburguer-buttom" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="bottom">
+            <ul class="left">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="register">
+                        Creá tu cuenta
+                        <i class="far fa-address-card"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="login">
+                        Ingresá
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Mis compras
+                        <i class="fas fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="login">
         <div class="container-form">
             <form action="/registro" method="#">
-                <div class="form-area name">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" minlength="6" required><br>
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" minlength="6" required><br>
-                    <input type="email" name="email" id="apellido" placeholder="E-mail" required></div>
-                <div class="form-area demograficos">
-                    <h4 class="tittle-form"><label for="date">Fecha de nacimiento</label></h4>
-                    <input type="date" name="date" id="date" required>
-                    <input type="text" name="address" id="address" placeholder="Domicilio">
+                
+                <div class="container-data">
+                    <input class="block" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" minlength="6" required>
+                    <input class="block" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" minlength="6" required>                    
+                    <input class="block" type="email" name="email" id="apellido" placeholder="E-mail" required>
                 </div>
-                <div class="perfil-usuario">
-                    <label for="perfil" class="tittle-form">Perfil de usuario</label>
-                    <div class="contenedor-perfil">
-                        <input type="radio" name="perfil">Comprador
-                        <input type="radio" name="perfil">Vendedor</div>
+
+                <div class="container-data">
+                    <label class="block text-style" for="date">Fecha de nacimiento</label>
+                    <input class="block" type="date" name="date" id="date" required>
+                    <input class="block" type="text" name="address" id="address" placeholder="Domicilio">
                 </div>
-                <div class="contenedor-intereses">
-                    <div class="titulo-intereses"><label for="interes" name="interes">Intereses</label></div>
-                    <div class="listaIntereses">
-                        <label id=intereses><input type="checkbox" name="interes">Electro</label>
-                        <label id=intereses><input type="checkbox" name="interes">Moda</label>
-                        <label id=intereses><input type="checkbox" name="interes">Hogar</label>
-                        <label id=intereses><input type="checkbox" name="interes">Jugueteria</label>
-                        <label id=intereses><input type="checkbox" name="interes">Vida Sana</label>
+                
+                <div class="container-profile-data">
+                    <label for="perfil" class="block text-style">Perfil de usuario</label>
+                    <div class="container-profile">
+                        <div class="option">
+                            <label for="buyer">Comprador</label>
+                            <input type="radio" name="profile" value="buyer">
+                        </div>
+                        <div class="option">
+                            <label for="seller">Vendedor</label>
+                            <input type="radio" name="profile" value="seller">
+                        </div>
                     </div>
                 </div>
-                <div class="fotoPerfil"><label for="fotoUser" name="fotoUser" id="titulo-foto">Foto de perfil</label>
-                    <input type="file" name="fotoUser" id="boton-foto-perfil"></div>
-                <div class="form-area contenedor-contraseña"><label for="password" name="password" id="password">Crea tu contraseña</label>
-                    <input type="password" name="password" id="pass" minlength="10">
-                    <label for="confirm-password" name="confirm-password" id="confirm-password">Confirma tu contraseña</label>
-                    <input type="password" name="confirm-password" id="confirmpass" required></div>
-                <div class="botonera-confirm"><button type="submit" id="send">Enviar</button>
-                    <button type="reset" id="delete">Borrar</button></div>
+
+                <div class="container-profile-data">
+                    <label class="block text-style" for="interes" name="interes">Intereses</label>
+                    <div class="option2">
+                        <label id=intereses>
+                            <input type="checkbox" name="interes">Electro
+                        </label>
+
+                        <label id=intereses>
+                            <input type="checkbox" name="interes">Moda
+                        </label>
+
+                        <label id=intereses>
+                            <input type="checkbox" name="interes">Hogar
+                        </label>
+
+                        <label id=intereses>
+                            <input type="checkbox" name="interes">Jugueteria
+                        </label>
+
+                        <label id=intereses>
+                            <input type="checkbox" name="interes">Vida Sana
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="container-data block foto-perfil">
+                    <label class="block text-style" for="fotoUser" name="fotoUser" id="titulo-foto">Foto de perfil</label>
+                    <input class="block" type="file" name="fotoUser" id="boton-foto-perfil">
+                </div>
+
+                <div class="container-data">
+                    <label class="block text-style" for="password" name="password" id="password">Crea tu contraseña
+                    </label>
+                    <input class="block" type="password" name="password" id="pass" minlength="10">
+
+                    <label class="block text-style" for="confirm-password" name="confirm-password" id="confirm-password">Confirma tu
+                        contraseña</label>
+                    <input class="block" type="password" name="confirm-password" id="confirmpass" required>
+                </div>
+                
+                <button class="block buttom-send" type="submit" id="send">Enviar</button>
 
             </form>
         </div>
@@ -56,17 +140,20 @@
             <div class="footer-section">
                 <i class="fas fa-credit-card"></i>
                 <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es seguro!</p>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es
+                    seguro!</p>
             </div>
             <div class="footer-section">
                 <i class="fas fa-gift"></i>
                 <h4>Envío gratis desde $2500</h4>
-                <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de Mercado Puntos.</p>
             </div>
             <div class="footer-section">
                 <i class="fas fa-user-shield"></i>
                 <h4>Seguridad, de principio a fin</h4>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.</p>
             </div>
         </section>
         <div>
@@ -74,4 +161,5 @@
         </div>
     </footer>
 </body>
+
 </html>
